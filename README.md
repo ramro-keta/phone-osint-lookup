@@ -1,4 +1,4 @@
-# PhoneInfo
+# phone-osint-lookup
 ## Phone Number OSINT & Recon Tool
 
 A Python-based Open Source Intelligence (OSINT) tool that extracts telecom metadata and generates web footprint reconnaissance queries (Google Dorks) for any international phone number.
