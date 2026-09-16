@@ -8,6 +8,7 @@ A Python-based Open Source Intelligence (OSINT) tool that extracts telecom metad
 - **Telecom Metadata Extraction:** Identifies country, region, service provider (carrier), and timezones using Google's `phonenumbers` library.
 - **Number Validation:** Verifies whether a given input is a valid international phone number format.
 - **OSINT Recon Links:** Automatically generates targeted Google search queries to look for public footprints across social media and paste sites.
+- **Interactive Browser Automation**: Prompts users to launch all generated search links directly into their default web browser for rapid investigation.
 
 ## Project Structure
 
