@@ -2,6 +2,7 @@ import phonenumbers
 from phonenumbers import carrier, geocoder, timezone
 import urllib.parse
 import webbrowser
+generated_links=[]
 
 def get_phone_info(phone_number_str):
     try:
@@ -40,6 +41,7 @@ def get_phone_info(phone_number_str):
         for title, query in dorks.items():
             encoded_query = urllib.parse.quote(query)
             google_url = f"https://www.google.com/search?q={encoded_query}"
+            generated_links.append((title, google_url))
             print(f"[*] {title}: {google_url}")
 
         print("\n--------------------------------------------------")
