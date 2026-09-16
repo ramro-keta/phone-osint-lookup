@@ -18,6 +18,7 @@ A Python-based Open Source Intelligence (OSINT) tool that extracts telecom metad
 ```
 ## Git Clone
 git clone [https://github.com/your-username/phone-osint-lookup.git](https://github.com/your-username/phone-osint-lookup.git)
+
 cd phone-osint-lookup
 ## Install dependencies
 pip install -r requirements.txt
@@ -25,15 +26,23 @@ pip install -r requirements.txt
 python main.py
 ## Output
 === Phone OSINT Information Lookup Tool ===
+
 Enter phone number with country code (e.g., +91... or +1...): +14155552671
 
 --- Telecom Metadata ---
+
 Formatted Number : +1 415-555-2671
+
 Country / Region : United States
+
 Carrier          : Unknown
+
 Timezones        : America/Los_Angeles
 
 --- OSINT Recon Links ---
+
 [*] General Search: [https://www.google.com/search?q=%22%2B14155552671%22](https://www.google.com/search?q=%22%2B14155552671%22)...
+
 [*] Social Media: [https://www.google.com/search?q=%22%2B14155552671%22](https://www.google.com/search?q=%22%2B14155552671%22)...
+
 [*] Paste Sites (Leaks): [https://www.google.com/search?q=%22%2B14155552671%22](https://www.google.com/search?q=%22%2B14155552671%22)...
