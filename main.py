@@ -1,6 +1,7 @@
 import phonenumbers
 from phonenumbers import carrier, geocoder, timezone
 import urllib.parse
+import webbrowser
 
 def get_phone_info(phone_number_str):
     try:
@@ -31,6 +32,7 @@ def get_phone_info(phone_number_str):
         dorks = {
             "General Search": f'"{phone_number_str}" OR "{raw_digits}"',
             "Social Media": f'"{phone_number_str}" (site:facebook.com OR site:linkedin.com OR site:instagram.com)',
+            "Messaging Platforms": f'"{phone_number_str}" (site:t.me OR site:wa.me OR site:whatsapp.com)',
             "Paste Sites (Leaks)": f'"{phone_number_str}" site:pastebin.com'
         }
 
@@ -40,6 +42,15 @@ def get_phone_info(phone_number_str):
             google_url = f"https://www.google.com/search?q={encoded_query}"
             print(f"[*] {title}: {google_url}")
 
+        print("\n--------------------------------------------------")
+        choice = input("Do you want to open all Dork links in your browser? (y/n): ").strip().lower()
+        
+        if choice == 'y':
+            print("\n[*] Opening search tabs in your browser...")
+            for title, url in generated_links:
+                webbrowser.open_new_tab(url)
+        else:
+            print("[*] Skipped opening browser tabs.")
     except Exception as err:
         print(f"\n[!] Error encountered: {err}")
 
